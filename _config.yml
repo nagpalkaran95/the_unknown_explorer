@@ -34,7 +34,7 @@ facebook_username: nagpalkaran95
 linkedin_username: nagpalkaran95
 
 # Build settings
-theme: jekyll-theme-clean-blog
+remote_theme: jekyll-theme-clean-blog
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
