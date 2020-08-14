@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "City of lakes from our big blue planet - Part 1"
-date:   2020-07-16 23:59:13 +0530
+date:   2020-08-15 00:00:00 +0530
 categories: india travel
 background: '/img/indian-diaries/udaipur/banner.jpg'
 ---
