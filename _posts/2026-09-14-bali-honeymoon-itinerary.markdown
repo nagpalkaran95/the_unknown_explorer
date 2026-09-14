@@ -26,6 +26,7 @@ If you are planning your own trip, feel free to copy this as-is.
 </div>
 
 ## Phase 1: Ubud - culture, party and adrenaline
+{: .phase-heading}
 
 Three nights of jungle views, high-energy activities and shopping.
 
@@ -48,9 +49,11 @@ Three nights of jungle views, high-energy activities and shopping.
 
 - Morning: Sleep in. No alarms.
 - 2:00 PM: ATV ride through the jungle around Tegallalang. Fun, muddy, and zero effort required, which is exactly what you want today.
-- Evening: Early dinner, pack your bags, lights out by 9 PM. Tomorrow starts at 2 AM.
+- Sunset: Head to Finns Beach Club for sunset and drinks.
+- Night: Back to the villa, pack your bags, and sleep as early as you can. Tomorrow starts at 2 AM.
 
 ## Phase 2: Munduk - the misty mountains
+{: .phase-heading}
 
 Cooler air, waterfalls, and the quietest part of the trip.
 
@@ -74,6 +77,7 @@ Cooler air, waterfalls, and the quietest part of the trip.
 - 10:00 AM: Back in Munduk. Rest of the day is completely free.
 
 ## Phase 3: Nusa Lembongan - island bliss
+{: .phase-heading}
 
 White sand, blue water, no agenda.
 
@@ -93,6 +97,7 @@ White sand, blue water, no agenda.
 - All day: Sandy Bay Beach Club or Mushroom Bay. No plans, no timings. This day exists so the trip does not feel like a checklist.
 
 ## Phase 4: Uluwatu - cliffs and the finale
+{: .phase-heading}
 
 Dramatic sunsets, surf culture, and an easy exit to the airport.
 
@@ -119,6 +124,7 @@ Dramatic sunsets, surf culture, and an easy exit to the airport.
 - 3:00 PM: Flight home.
 
 ## The logistics that made it work
+{: .phase-heading}
 
 ### Transport
 

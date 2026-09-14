@@ -309,6 +309,18 @@ footer { background: $color-navy !important; color: rgba(255,255,255,0.75); padd
   }
 }
 
+// PHASE HEADINGS (itinerary chapter breaks - applied via {: .phase-heading})
+h2.phase-heading {
+  margin: 3rem 0 1.25rem;
+  padding: 0.7rem 1.2rem;
+  background: linear-gradient(135deg, $color-navy, $color-navy-light);
+  color: $color-white !important;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  line-height: 1.35;
+  text-align: left !important;
+}
+
 // QUICK PICKS (top-of-post TL;DR box)
 .quick-picks {
   background: linear-gradient(135deg, #FFF8E7, #FFF3D4);
