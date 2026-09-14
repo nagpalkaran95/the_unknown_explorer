@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "9 Must-Have Travel Gear Items"
+title: "9 Travel Gear Items I Never Fly Without"
 subtitle: "Everything I packed for Vietnam - and what I wish I'd packed sooner"
 date: 2024-10-10 00:00:00 +0530
 categories: [gear]
 tags: [travel, vietnam, packing-list]
 background: '/img/international-diaries/vietnam/banner.jpg'
-excerpt: "9 travel gear items I refuse to fly without - tested across Ho Chi Minh City, Da Nang, and Hanoi, plus the ones I wish I'd packed sooner."
+excerpt: "From a 45L rucksack to a waterproof phone pouch - 9 gear items tested across Ho Chi Minh City, Da Nang, and Hanoi, plus the ones I wish I'd packed sooner."
 redirect_from:
   - /gear/travel/2024/10/09/vietnam-travel-gear.html
   - /gear/travel/2024/10/10/vietnam-travel-gear.html
@@ -14,9 +14,9 @@ redirect_from:
 
 After spending 9 days across Ho Chi Minh City, Da Nang, and Hanoi, I learned quickly what gear earns its place in your bag - and what doesn't. This is my definitive list of 9 travel essentials for any trip, honed through real experience.
 
-### 1. Lightweight Backpack (40L)
+### 1. Lightweight Backpack (40-45L)
 
-The single most important decision you'll make. Travel means humid weather, narrow streets, and moving between cities constantly. A carry-on-friendly 40L pack keeps you nimble - no checked baggage queues, no lost luggage risk.
+The single most important decision you'll make. Travel means humid weather, narrow streets, and moving between cities constantly. A carry-on-friendly 40-45L pack keeps you nimble - no checked baggage queues, no lost luggage risk.
 
 <div class="amazon-product">
   <img class="product-img" src="{{ '/img/gear/backpack_thumb.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Wildcraft 45L Rucksack">
@@ -64,7 +64,7 @@ Long train rides, overnight buses, all-day tourist spots - you will drain your p
 Southeast Asia uses a mix of plug types. Vietnam uses Type A and C, but your hotel might have something different. A universal adapter eliminates all uncertainty.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1595206133361-b1fe343e5e23?auto=format&fit=crop&w=300&q=80" alt="Universal Travel Adapter">
+  <img class="product-img" src="{{ '/img/gear/travel_adapter.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Universal Travel Adapter">
   <div class="product-info">
     <div class="product-name">Universal Travel Adapter with USB Ports</div>
     <div class="product-desc">Works in 150+ countries. Built-in surge protection. The USB ports let you charge multiple devices without occupying extra sockets.</div>
@@ -79,7 +79,7 @@ Southeast Asia uses a mix of plug types. Vietnam uses Type A and C, but your hot
 The flight from Mumbai to Ho Chi Minh City is 6+ hours. Add the internal flights between cities, and you're spending a lot of time in airplane seats. A good neck pillow is worth every rupee.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1520038410233-7141be7e6f97?auto=format&fit=crop&w=300&q=80" alt="Memory Foam Travel Neck Pillow">
+  <img class="product-img" src="{{ '/img/gear/neck_pillow.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Memory Foam Travel Neck Pillow">
   <div class="product-info">
     <div class="product-name">Memory Foam Travel Neck Pillow</div>
     <div class="product-desc">Ergonomic shape, washable cover, compresses to palm size. I upgraded from an inflatable one and never looked back.</div>
@@ -94,7 +94,7 @@ The flight from Mumbai to Ho Chi Minh City is 6+ hours. Add the internal flights
 This sounds like overkill until you've lived out of a backpack for 9 days. Packing cubes mean you can find any item in 10 seconds, keep dirty and clean clothes separate, and actually use every inch of your bag.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=300&q=80" alt="Packing Cubes Set">
+  <img class="product-img" src="{{ '/img/gear/packing_cubes.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Packing Cubes Set">
   <div class="product-info">
     <div class="product-name">Packing Cubes Set (4-piece)</div>
     <div class="product-desc">Lightweight nylon, compression zipper, variety of sizes. Colour-coded helps you know exactly where everything is without unpacking.</div>
@@ -109,7 +109,7 @@ This sounds like overkill until you've lived out of a backpack for 9 days. Packi
 Hotels often have thin towels (or none at budget stays). A microfibre towel dries in 20 minutes, takes up no space, and weighs almost nothing.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1616627547584-bf28cee262db?auto=format&fit=crop&w=300&q=80" alt="Quick-Dry Microfibre Travel Towel">
+  <img class="product-img" src="{{ '/img/gear/microfibre_towel.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Quick-Dry Microfibre Travel Towel">
   <div class="product-info">
     <div class="product-name">Quick-Dry Microfibre Travel Towel (XL)</div>
     <div class="product-desc">Antibacterial, ultra-absorbent, comes with carry pouch. Essential for beach days, waterfalls, and budget accommodations.</div>
@@ -124,7 +124,7 @@ Hotels often have thin towels (or none at budget stays). A microfibre towel drie
 Whether you're on a boat or stuck in a sudden monsoon, your phone needs protection. I've submerged mine to 10m while snorkelling and had zero issues.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=300&q=80" alt="Waterproof Phone Pouch">
+  <img class="product-img" src="{{ '/img/gear/waterproof_pouch.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Waterproof Phone Pouch">
   <div class="product-info">
     <div class="product-name">Waterproof Phone Pouch (IPX8)</div>
     <div class="product-desc">Fits phones up to 7 inches, touch-screen compatible. Works with all cameras so you can shoot underwater. Essential for beach and boat days.</div>
@@ -139,7 +139,7 @@ Whether you're on a boat or stuck in a sudden monsoon, your phone needs protecti
 Whether you're solo or in a group, a small tripod gets you better shots than any stranger you hand your camera to. Mine got used every single day on my travels.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=300&q=80" alt="Flexible Mini Tripod">
+  <img class="product-img" src="{{ '/img/gear/mini_tripod.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flexible Mini Tripod">
   <div class="product-info">
     <div class="product-name">Flexible Mini Tripod (Gorilla-style)</div>
     <div class="product-desc">Bendable legs wrap around railings, posts, trees. Bluetooth remote included. Fits in your bag pocket. Works with phones and action cameras.</div>

@@ -19,7 +19,7 @@ Not all great travel gear has to be expensive. After years of travel, I've found
 Roll-up compression bags are the single best way to double your bag's capacity. Perfect for bulky items like jackets and jeans. Squeeze the air out, and they shrink to half the size.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=300&q=80" alt="Compression Packing Bags">
+  <img class="product-img" src="{{ '/img/gear/compression_bags.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Compression Packing Bags">
   <div class="product-info">
     <div class="product-name">Compression Roll-Up Packing Bags (5-pack)</div>
     <div class="product-desc">No vacuum pump needed - just roll to compress. Works for clothes, towels, light jackets. A travel essential I've used since my first trip to Udaipur.</div>
@@ -34,7 +34,7 @@ Roll-up compression bags are the single best way to double your bag's capacity. 
 Airport security limits liquids to 100ml. Buy a set of leak-proof travel bottles and fill them with your regular products instead of buying overpriced travel-sized brands.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=300&q=80" alt="Leak-Proof Toiletry Bottles">
+  <img class="product-img" src="{{ '/img/gear/toiletry_bottles.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Leak-Proof Toiletry Bottles">
   <div class="product-info">
     <div class="product-name">Leak-Proof Travel Bottles (6-piece set)</div>
     <div class="product-desc">TSA-approved sizes, silicone with flip caps, won't leak in your bag. Comes with a clear zip pouch for airport security. Gets used on every trip.</div>
@@ -64,7 +64,7 @@ Economy flights. Noisy hostels. Bright hotel curtains. A good sleep mask is the 
 Underrated travel tool. Clip wet clothes to the outside of your bag to dry while walking. Attach your water bottle to your pack. Hook bags together. Endless utility, near-zero weight.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1521106047354-5a5b85e819ee?auto=format&fit=crop&w=300&q=80" alt="Aluminium Carabiner Clips">
+  <img class="product-img" src="{{ '/img/gear/carabiner_clips.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Aluminium Carabiner Clips">
   <div class="product-info">
     <div class="product-name">Aluminium Carabiner Clips (Set of 4)</div>
     <div class="product-desc">Lightweight but strong, multi-purpose clips. I keep 2 on my bag straps permanently - they've been the most unexpectedly useful items I've ever packed.</div>
@@ -79,7 +79,7 @@ Underrated travel tool. Clip wet clothes to the outside of your bag to dry while
 Hydration is key, especially in the heat of Southeast Asia or Rajasthan. A collapsible bottle flattens completely when empty - no wasted bag space.
 
 <div class="amazon-product">
-  <img class="product-img" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=300&q=80" alt="Collapsible Silicone Water Bottle">
+  <img class="product-img" src="{{ '/img/gear/collapsible_bottle.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Collapsible Silicone Water Bottle">
   <div class="product-info">
     <div class="product-name">Collapsible Silicone Water Bottle (750ml)</div>
     <div class="product-desc">Food-grade silicone, BPA-free, dishwasher safe. Folds to 2cm when empty. Clip on a carabiner (see above!) and you're set for any hike or day trip.</div>

@@ -42,10 +42,10 @@
           <a class="nav-link{% if current == '/' or current == '/index.html' %} active{% endif %}" href="{{ "/" | relative_url }}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link{% if current == '/about/' or current == '/about' or current == '/about.html' %} active{% endif %}" href="{{ "/about" | relative_url }}">About</a>
+          <a class="nav-link{% if is_travel_diary %} active{% endif %}" href="{{ "/posts" | relative_url }}">Travel Diaries</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link{% if is_travel_diary %} active{% endif %}" href="{{ "/posts" | relative_url }}">Travel Diaries</a>
+          <a class="nav-link{% if current == '/about/' or current == '/about' or current == '/about.html' %} active{% endif %}" href="{{ "/about" | relative_url }}">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link{% if is_watch_active %} active{% endif %}" href="{{ "/watch" | relative_url }}">Watch</a>

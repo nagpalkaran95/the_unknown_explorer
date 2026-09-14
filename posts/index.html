@@ -1,33 +1,37 @@
 ---
 layout: page
-title: Posts
+title: Travel Diaries
+subtitle: Stories from the road - one journey at a time
 background: '/img/bg-post.jpg'
 ---
 
+<div class="diary-list">
 {% for post in paginator.posts %}
-
-<article class="post-preview">
-  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="post-title">{{ post.title }}</h2>
-    {% if post.subtitle %}
-    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-    {% else %}
-    <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+  <article class="diary-card">
+    {% if post.background %}
+    <a class="diary-thumb" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+      <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ post.title | escape }}" loading="lazy">
+    </a>
     {% endif %}
-  </a>
-  <p class="post-meta">Posted by
-    {% if post.author %}
-    {{ post.author }}
-    {% else %}
-    {{ site.author }}
-    {% endif %}
-    on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
-  </p>
-</article>
-
-<hr>
-
+    <div class="diary-body">
+      <span class="diary-cat">{{ post.categories.first | default: 'travel' | upcase }}</span>
+      <a class="diary-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <h2 class="diary-title">{{ post.title }}</h2>
+        {% if post.subtitle %}
+        <p class="diary-subtitle">{{ post.subtitle }}</p>
+        {% else %}
+        <p class="diary-subtitle">{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
+        {% endif %}
+      </a>
+      <p class="diary-meta">
+        <i class="far fa-calendar-alt"></i> {{ post.date | date: '%B %d, %Y' }}
+        &nbsp;&middot;&nbsp;
+        <i class="far fa-clock"></i> {% include read_time.html content=post.content %}
+      </p>
+    </div>
+  </article>
 {% endfor %}
+</div>
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
