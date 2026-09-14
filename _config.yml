@@ -46,10 +46,9 @@ youtube_username: "@roamingletters"
 # google_analytics
 # Legacy UA property (dead since Jul 2023) - kept for reference only
 google_analytics: UA-175438287-1
-# GA4 measurement ID - create a GA4 property at analytics.google.com and paste
-# the "G-XXXXXXXXXX" ID here. Tracking (incl. affiliate click events) activates
-# automatically once set.
-google_analytics_v4: ""
+# GA4 measurement ID (property 389820136). Tracking incl. affiliate click
+# events activates via _includes/google-analytics.html.
+google_analytics_v4: "G-54KYB8HMT0"
 
 # Build settings
 remote_theme: jekyll-theme-clean-blog

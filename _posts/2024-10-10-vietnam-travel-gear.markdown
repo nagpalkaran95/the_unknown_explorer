@@ -19,7 +19,7 @@ After spending 9 days across Ho Chi Minh City, Da Nang, and Hanoi, I learned qui
   <ol>
     <li>🥇 <a class="amazon-inline" href="https://www.amazon.in/dp/B01G5I8YLC/?tag={{ site.amazon_affiliate_tag }}" target="_blank" rel="noopener sponsored">Wildcraft 45L Rucksack</a> - the single most important buy</li>
     <li>🥈 <a class="amazon-inline" href="https://www.amazon.in/dp/B0DCZ3WDTB/?tag={{ site.amazon_affiliate_tag }}" target="_blank" rel="noopener sponsored">Mi Power Bank 3i 20,000 mAh</a> - never a dead phone</li>
-    <li>🥉 <a class="amazon-inline" href="https://www.amazon.in/dp/B0CJRNG5HC/?tag={{ site.amazon_affiliate_tag }}" target="_blank" rel="noopener sponsored">Packing Cubes (4-piece)</a> - find anything in 10 seconds</li>
+    <li>🥉 <a class="amazon-inline" href="https://www.amazon.in/dp/B0CJRNG5HC/?tag={{ site.amazon_affiliate_tag }}" target="_blank" rel="noopener sponsored">Packing Cubes</a> - find anything in 10 seconds</li>
   </ol>
 </div>
 
@@ -108,7 +108,7 @@ The flight from Mumbai to Ho Chi Minh City is 6+ hours. Add the internal flights
   </div>
 </div>
 
-### 6. Packing Cubes (Set of 4)
+### 6. Packing Cubes
 
 This sounds like overkill until you've lived out of a backpack for 9 days. [Packing cubes](https://www.amazon.in/dp/B0CJRNG5HC/?tag={{ site.amazon_affiliate_tag }}){: .amazon-inline target="_blank" rel="noopener sponsored"} mean you can find any item in 10 seconds, keep dirty and clean clothes separate, and actually use every inch of your bag.
 
@@ -117,7 +117,7 @@ This sounds like overkill until you've lived out of a backpack for 9 days. [Pack
     <img class="product-img" src="{{ '/img/gear/packing_cubes.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Packing Cubes Set">
   </a>
   <div class="product-info">
-    <div class="product-name"><a href="https://www.amazon.in/dp/B0CJRNG5HC/?tag={{ site.amazon_affiliate_tag }}" target="_blank" rel="noopener sponsored">Packing Cubes Set (4-piece)</a></div>
+    <div class="product-name"><a href="https://www.amazon.in/dp/B0CJRNG5HC/?tag={{ site.amazon_affiliate_tag }}" target="_blank" rel="noopener sponsored">Packing Cubes Set</a></div>
     <div class="product-desc">Lightweight nylon, compression zipper, variety of sizes. Colour-coded helps you know exactly where everything is without unpacking.</div>
     <a class="btn-amazon" href="https://www.amazon.in/dp/B0CJRNG5HC/?tag={{ site.amazon_affiliate_tag }}" target="_blank" rel="noopener sponsored">
       <i class="fab fa-amazon"></i> View Price on Amazon
