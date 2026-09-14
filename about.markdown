@@ -15,14 +15,17 @@ Each post is our attempt at capturing places the way we actually experienced the
 
 Hi, we're **Karan & {{ site.partner_name }}** - a travel couple based in India, chasing food, flights, and everything in between.
 
-{: style="text-align: center;"}
-![Us]({{ site.baseurl }}/img/about/about-me.png){:height="200px" width="200px" style="border-radius: 50%;"}
-
 #### Karan Nagpal
+
+{: style="text-align: center;"}
+![Karan Nagpal]({{ site.baseurl }}/img/about/about-me.png){:height="200px" width="200px" style="border-radius: 50%;"}
 
 Techie by day, adrenaline chaser everywhere else. The kind of person who packs a bag at a moment's notice and starts researching the next scuba spot at 2 AM. I have a thing for jumping out of airplanes, leaping off cliffs, and exploring the vibrant world beneath the sea. If a trip involves altitude, water, or something that goes fast, I'm in.
 
 #### {{ site.partner_name }}
+
+{: style="text-align: center;"}
+![{{ site.partner_name }}]({{ site.baseurl }}/img/about/divya.jpg){:height="200px" width="200px" style="border-radius: 50%;"}
 
 Aviation professional and full-time instructor - she trains the people who actually keep planes in the sky. Foodie in every free moment: if a city has a signature dish or an unmarked local joint, she'll find it before we've even unpacked. Her flying background also means she's the one who actually reads the seat map before we book.
 
