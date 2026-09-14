@@ -1,23 +1,33 @@
 ---
 layout: page
-title: About Me
+title: About Us
 permalink: /about/
 background: '/img/bg-about.jpg'
 ---
 
 ### About the blog
 
-**RoamingLetters** - a space where life's adventures are chronicled like an ever-growing library of untold stories. Our lives are vast collections of memories, and through this blog, I aim to open the doors to mine, sharing journeys that span across India and the world.
+**RoamingLetters** is our shared travel journal - stories, gear picks, and honest recommendations from a couple who plans trips around food, altitude, and the next stamp on the passport.
 
-Each post invites you to experience new places, savor diverse cuisines, and explore with me as I follow my love for adventure and storytelling. For the curious traveler and passionate foodie, this blog is your ticket to live through my stories - one journey at a time.
+Each post is our attempt at capturing places the way we actually experienced them: the food we couldn't stop talking about, the missed trains, the small logistical wins, and the gear that survived. Whether you're planning your own trip or just here to travel by scroll - welcome.
 
-### About Me
+### The travelers
 
-Hi, I’m **Karan Nagpal!** By day, I’m a techie, but when the sun sets, I transform into an explorer ready to embrace the unknown.
+Hi, we're **Karan & {{ site.partner_name }}** - a travel couple based in India, chasing food, flights, and everything in between.
 
 {: style="text-align: center;"}
-![Profile Picture]({{ site.baseurl }}/img/about/about-me.png){:height="200px"; width="200ox" style="border-radius: 50%;"}
+![Us]({{ site.baseurl }}/img/about/about-me.png){:height="200px" width="200px" style="border-radius: 50%;"}
 
-I’m the kind of person who packs a bag at a moment’s notice, chasing the call of the hills or the sea - whichever is closest. My curiosity drives my travels, as I dive deep into everything a place has to offer, always taking back memories and stories worth sharing. Through this blog, I bring these stories to life in the most captivating way I can.
+#### Karan Nagpal
 
-P.S. I have a thing for jumping out of airplanes, leaping off cliffs, and exploring the vibrant world beneath the sea!
+Techie by day, adrenaline chaser everywhere else. The kind of person who packs a bag at a moment's notice and starts researching the next scuba spot at 2 AM. I have a thing for jumping out of airplanes, leaping off cliffs, and exploring the vibrant world beneath the sea. If a trip involves altitude, water, or something that goes fast, I'm in.
+
+#### {{ site.partner_name }}
+
+Aviation professional and full-time instructor - she trains the people who actually keep planes in the sky. Foodie in every free moment: if a city has a signature dish or an unmarked local joint, she'll find it before we've even unpacked. Her flying background also means she's the one who actually reads the seat map before we book.
+
+#### Together
+
+RoamingLetters is our chronicle of the trips that shaped us - and a resource for anyone planning theirs. Expect gear that's actually been tested, food you can trust, and itineraries built the way we'd plan our own.
+
+P.S. Karan will get us to the cliff edge. She'll find us the best meal within a 2 km radius. It works.
