@@ -8,6 +8,11 @@
 # To add a destination: add an entry here, tag posts with the slug, and create
 # destinations/<slug>/index.html with `layout: destination` (copy an existing one).
 
+- name: Bali
+  slug: bali
+  image: /img/bg-post.jpg
+  blurb: "Our honeymoon island - jungle, misty mountains, manta rays, and cliff sunsets."
+
 - name: Vietnam
   slug: vietnam
   image: /img/international-diaries/vietnam/banner.jpg
