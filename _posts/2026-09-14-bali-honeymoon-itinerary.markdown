@@ -23,16 +23,13 @@ Three nights of jungle views, high-energy activities and shopping.
 ### Day 1 (Mar 6): Arrival
 
 - 1:30 PM: Landed at DPS airport, cleared immigration.
-- 3:00 PM: Private driver pickup, transfer to Ubud (about 1.5 hours).
+- 3:00 PM: Airport pickup, pre-booked on Klook (it was cheaper than Grab). Transfer to Ubud takes about 1.5 hours.
 - Evening: Checked in, got a massage at Putu's Whole Health Spa, and had dinner at Hujan Locale. A quiet local warung works just as well on arrival night.
 
 ### Day 2 (Mar 7): Art, shopping and the big night out
 
 - 10:00 AM: Silver jewelry workshop. Pre-book one near Jl. Hanoman - you make your own ring or pendant and keep it.
-- 1:00 PM: Home decor shopping run:
-  - Ubud Art Market for woven bags and macrame
-  - Toko Paras for wood carvings and statues
-  - Threads of Life for textiles
+- 1:00 PM: Shopping at Ubud Art Market - woven bags, macrame, wood carvings, textiles. Bargain, and take your time.
 - 4:00 PM: Back to the villa for a nap. You will need it.
 - 6:00 PM: Transfer to Canggu (1.5 hours).
 - The party: dinner at Mexicola, drinks at Old Man's, late night at Sandbar.
@@ -106,19 +103,18 @@ Dramatic sunsets, surf culture, and an easy exit to the airport.
 - 6:00 PM: Kecak Fire Dance at sunset. Touristy, yes. Skippable, no.
 - Night: Farewell dinner.
 
-### Day 13 (Mar 18): Souvenirs and flight
+### Day 13 (Mar 18): Flight home
 
 - Morning: Sleep in, late brunch.
-- 11:30 AM: Check out, Grab to the airport with one stop on the way.
-- 12:15 PM: Krisna Oleh-Oleh on Sunset Road. Stock up on Balinese peanuts, Pie Susu (milk pie), Luwak coffee and aromatherapy oils.
-- 1:15 PM: Airport.
+- 11:30 AM: Check out, Grab to the airport.
 - 3:00 PM: Flight home.
 
 ## The logistics that made it work
 
 ### Transport
 
-- **Long transfers:** Pre-book a private driver for airport to Ubud, Ubud to Munduk, and Munduk to Sanur. Expect around IDR 600k to 800k per day.
+- **Airport pickup:** Pre-book it on Klook. It worked out cheaper than Grab for us.
+- **Long transfers:** Pre-book a private driver for Ubud to Munduk and Munduk to Sanur. Expect around IDR 600k to 800k per day.
 - **Short trips in Uluwatu and Sanur:** Grab and Gojek work fine and cost a fraction of hotel taxis.
 - **On the islands:** Walk, rent a scooter, or take a golf cart buggy.
 
@@ -126,15 +122,20 @@ Dramatic sunsets, surf culture, and an easy exit to the airport.
 
 Sanur to Lembongan and back: book with Rocky Fast Cruise or D'Camel. The crossing takes about 30 minutes.
 
+### SIM and internet
+
+Get your eSIM delivered to your hotel instead of buying an overpriced SIM at the airport. The airport wifi is good enough to book your cab and message the hotel, so you are covered until you check in.
+
 ### Apps to download before you fly
 
 - **Gojek / Grab** for taxis and food delivery
+- **Klook** for the airport pickup and activity bookings
 - **WhatsApp** - every driver and hotel in Bali runs on it
 - **Google Maps** - download the offline map of Bali before your flight
 
 ### One packing tip
 
-Leave half a suitcase empty. Between the wood carvings in Ubud and the coffee and snacks at Krisna, you will fill it. We speak from experience.
+Leave half a suitcase empty. Between the wood carvings from Ubud and everything else you pick up along the way, you will fill it. We speak from experience.
 
 ---
 
