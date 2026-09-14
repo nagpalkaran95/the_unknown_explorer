@@ -6,7 +6,7 @@ permalink: /start-here/
 background: '/img/bg-index.jpg'
 ---
 
-Hi - we're Karan & Divya, a travel couple chronicling our trips across India and the world. Here's the fastest way into the good stuff:
+Hi - we're a travel couple chronicling our trips across India and the world ([more about us]({{ '/about/' | relative_url }})). Here's the fastest way into the good stuff:
 
 ### 🧳 If you're planning a trip
 
