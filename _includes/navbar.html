@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-xl navbar-light fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="{{ "/" | relative_url }}">
       {{ site.title | escape }}
@@ -21,10 +21,20 @@
           {% assign is_post = true %}
         {% endif %}
 
+        {% assign is_itinerary_post = false %}
+        {% if page.categories contains 'itinerary' %}
+          {% assign is_itinerary_post = true %}
+        {% endif %}
+
+        {% assign is_food_post = false %}
+        {% if page.categories contains 'food' %}
+          {% assign is_food_post = true %}
+        {% endif %}
+
         {% assign is_travel_diary = false %}
         {% if current contains '/posts' %}
           {% assign is_travel_diary = true %}
-        {% elsif is_post and is_gear == false %}
+        {% elsif is_post and is_gear == false and is_itinerary_post == false and is_food_post == false %}
           {% assign is_travel_diary = true %}
         {% endif %}
 
@@ -48,10 +58,10 @@
           <a class="nav-link{% if current contains '/destinations' %} active{% endif %}" href="{{ "/destinations" | relative_url }}">Destinations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link{% if current contains '/itineraries' %} active{% endif %}" href="{{ "/itineraries" | relative_url }}">Itineraries</a>
+          <a class="nav-link{% if current contains '/itineraries' or is_itinerary_post %} active{% endif %}" href="{{ "/itineraries" | relative_url }}">Itineraries</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link{% if current contains '/food' %} active{% endif %}" href="{{ "/food" | relative_url }}">Food</a>
+          <a class="nav-link{% if current contains '/food' or is_food_post %} active{% endif %}" href="{{ "/food" | relative_url }}">Food</a>
         </li>
         <li class="nav-item">
           <a class="nav-link{% if current == '/about/' or current == '/about' or current == '/about.html' %} active{% endif %}" href="{{ "/about" | relative_url }}">About</a>

@@ -59,12 +59,13 @@ hr { border: none; border-top: 1px solid $color-border; margin: 2.5rem 0; }
   .nav-link {
     font-family: $font-body !important;
     font-weight: 500;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $color-navy !important;
-    padding: 0.5rem 1rem !important;
+    padding: 0.5rem 0.75rem !important;
     position: relative;
+    white-space: nowrap;
     transition: color 0.2s ease;
     &::after {
       content: '';
@@ -461,13 +462,18 @@ a.amazon-inline {
   .sr-date { display: block; font-size: 0.72rem; color: $color-text-muted; }
 }
 
+// Collapsed navbar dropdown (hamburger shows below the xl breakpoint)
+@media (max-width: 1199.98px) {
+  #mainNav .navbar-collapse { background: rgba(255,255,255,0.97); padding: 1rem; border-radius: 12px; margin-top: 0.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+  #mainNav .nav-link.nav-gear { margin-left: 0; display: inline-block; margin-top: 0.35rem; }
+}
+
 // RESPONSIVE
 @media (max-width: 768px) {
   header.masthead { padding: 160px 0 100px; }
   .posts-grid { grid-template-columns: 1fr; gap: 1.25rem; }
   .featured-gear-strip { padding: 1.75rem 1.25rem; .gear-items { grid-template-columns: 1fr 1fr; } }
   .amazon-product { flex-direction: column; }
-  #mainNav .navbar-collapse { background: rgba(255,255,255,0.97); padding: 1rem; border-radius: 12px; margin-top: 0.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
   .related-posts .related-grid { grid-template-columns: 1fr 1fr; }
   .sticky-gear-cta { display: flex; }
   .diary-card { flex-direction: column; .diary-thumb { flex: none; height: 170px; } }
