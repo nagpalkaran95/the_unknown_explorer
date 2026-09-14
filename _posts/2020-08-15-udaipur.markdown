@@ -2,8 +2,13 @@
 layout: post
 title:  "City of lakes from our big blue planet - Part 1"
 date:   2020-08-15 00:00:00 +0530
-categories: india travel
+categories: [travel]
+tags: [india, udaipur, solo-travel]
 background: '/img/indian-diaries/udaipur/banner.jpg'
+excerpt: "How a nosedived interview turned into a spontaneous trip to Udaipur - and why the city of lakes is worth every one of those 16 hours on the train."
+redirect_from:
+  - /india/travel/2020/08/14/udaipur.html
+  - /india/travel/2020/08/15/udaipur.html
 ---
 
 > Have you ever felt like your head’s under 6 feet water and you are slowly running out of breath? Whenever I feel the water rising, I try to look up at the blue sky, and slowly swim to the shore.

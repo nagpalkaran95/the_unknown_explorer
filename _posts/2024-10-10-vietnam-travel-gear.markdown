@@ -3,8 +3,13 @@ layout: post
 title: "9 Must-Have Travel Gear Items"
 subtitle: "Everything I packed for Vietnam - and what I wish I'd packed sooner"
 date: 2024-10-10 00:00:00 +0530
-categories: gear travel
+categories: [gear]
+tags: [travel, vietnam, packing-list]
 background: '/img/international-diaries/vietnam/banner.jpg'
+excerpt: "9 travel gear items I refuse to fly without - tested across Ho Chi Minh City, Da Nang, and Hanoi, plus the ones I wish I'd packed sooner."
+redirect_from:
+  - /gear/travel/2024/10/09/vietnam-travel-gear.html
+  - /gear/travel/2024/10/10/vietnam-travel-gear.html
 ---
 
 After spending 9 days across Ho Chi Minh City, Da Nang, and Hanoi, I learned quickly what gear earns its place in your bag - and what doesn't. This is my definitive list of 9 travel essentials for any trip, honed through real experience.

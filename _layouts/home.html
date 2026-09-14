@@ -29,20 +29,22 @@ layout: default
 
         <!-- Start Here Banner (for first-time visitors) -->
         {% assign featured_post = nil %}
-        {% for p in site.posts %}
-          {% if p.categories contains "vietnam" %}
-            {% unless featured_post %}{% assign featured_post = p %}{% endunless %}
-          {% endif %}
-        {% endfor %}
+        {% if site.featured_post_slug %}
+          {% for p in site.posts %}
+            {% if p.slug == site.featured_post_slug %}{% assign featured_post = p %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
         {% unless featured_post %}{% assign featured_post = site.posts | first %}{% endunless %}
+        {% if featured_post %}
         <div class="start-here-banner">
           <span class="start-icon">✈️</span>
           <div class="start-text">
             <h4>New here? Welcome to RoamingLetters!</h4>
-            <p>Start with my Vietnam trip diary - 9 days, 3 cities, one unforgettable adventure.</p>
+            <p>{{ site.featured_post_intro | default: featured_post.excerpt | strip_html | truncatewords: 24 }}</p>
           </div>
-          <a class="btn-start" href="{{ featured_post.url | prepend: site.baseurl | replace: '//', '/' }}">Read Vietnam Diary →</a>
+          <a class="btn-start" href="{{ featured_post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ site.featured_post_label | default: 'Read the story' }} →</a>
         </div>
+        {% endif %}
 
         <!-- Travel Diaries Section -->
         <div class="section-header" style="margin-top:2.5rem;">
@@ -97,21 +99,18 @@ layout: default
             <a class="btn-see-all" href="{{ "/gear" | relative_url }}">See All Picks →</a>
           </div>
           <div class="gear-items">
-            <div class="gear-item">
-              <img class="gear-img" src="{{ '/img/gear/backpack_thumb.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Travel Backpack">
-              <div class="gear-name">Travel Backpack</div>
-              <div class="gear-desc">My go-to 40L carry-on for Southeast Asia trips</div>
-            </div>
-            <div class="gear-item">
-              <img class="gear-img" src="{{ '/img/gear/camera_thumb.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Action Camera">
-              <div class="gear-name">Action Camera</div>
-              <div class="gear-desc">Waterproof, lightweight - perfect for adventures</div>
-            </div>
-            <div class="gear-item">
-              <img class="gear-img" src="{{ '/img/gear/powerbank_thumb.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="Power Bank">
-              <div class="gear-name">Power Bank</div>
-              <div class="gear-desc">20,000 mAh - never run out of charge abroad</div>
-            </div>
+            {% for item in site.data.featured_gear %}
+              {% assign is_external = false %}
+              {% if item.href contains '://' %}{% assign is_external = true %}{% endif %}
+              <a class="gear-item{% if is_external %} gear-item-affiliate{% endif %}"
+                 href="{% if is_external %}{{ item.href }}{% else %}{{ item.href | prepend: site.baseurl | replace: '//', '/' }}{% endif %}"
+                 {% if is_external %}target="_blank" rel="noopener sponsored"{% endif %}>
+                <img class="gear-img" src="{{ item.image | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ item.name | escape }}">
+                <div class="gear-name">{{ item.name }}</div>
+                <div class="gear-desc">{{ item.desc }}</div>
+                <span class="gear-cta">{% if is_external %}<i class="fab fa-amazon"></i> Shop on Amazon{% else %}Read review{% endif %} →</span>
+              </a>
+            {% endfor %}
           </div>
         </div>
 

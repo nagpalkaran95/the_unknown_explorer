@@ -1,0 +1,46 @@
+---
+layout: page
+title: Watch
+subtitle: Travel &amp; food videos from the road
+permalink: /watch/
+background: '/img/bg-post.jpg'
+---
+
+{% assign videos = site.data.videos %}
+{% assign has_videos = false %}
+{% if videos %}
+  {% for v in videos %}
+    {% if v.id %}{% assign has_videos = true %}{% break %}{% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if has_videos %}
+<div class="videos-grid">
+  {% for v in videos %}
+    {% if v.id %}
+    <article class="video-card">
+      <a class="video-thumb" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="{{ v.title | escape }}" loading="lazy">
+        <span class="video-play"><i class="fab fa-youtube"></i></span>
+      </a>
+      <div class="video-body">
+        <h3 class="video-title">
+          <a href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">{{ v.title }}</a>
+        </h3>
+        {% if v.description %}<p class="video-desc">{{ v.description }}</p>{% endif %}
+        {% if v.published %}<p class="video-meta"><i class="far fa-calendar-alt"></i> {{ v.published | date: '%b %d, %Y' }}</p>{% endif %}
+      </div>
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
+{% else %}
+<div class="videos-empty">
+  <div class="videos-empty-icon"><i class="fab fa-youtube"></i></div>
+  <h3>Videos coming soon</h3>
+  <p>I&rsquo;m building the RoamingLetters YouTube channel - travel diaries, food walks, and gear reviews.<br>Subscribe so you don&rsquo;t miss the first drops.</p>
+  <a class="btn-youtube" href="https://youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener">
+    <i class="fab fa-youtube"></i> Subscribe on YouTube
+  </a>
+</div>
+{% endif %}

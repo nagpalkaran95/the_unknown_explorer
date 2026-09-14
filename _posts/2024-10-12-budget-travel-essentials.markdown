@@ -3,8 +3,13 @@ layout: post
 title: "Budget Travel Essentials Under ₹2000"
 subtitle: "High-impact travel gear that won't drain your wallet before the trip begins"
 date: 2024-10-12 00:00:00 +0530
-categories: gear travel
+categories: [gear]
+tags: [travel, budget, packing-list]
 background: '/img/international-diaries/travel-checklist/banner.jpg'
+excerpt: "6 travel essentials under ₹2000 each - compression bags, leak-proof bottles, sleep mask, carabiners, collapsible water bottle, and a compact first-aid kit. All Amazon India links inside."
+redirect_from:
+  - /gear/travel/2024/10/11/budget-travel-essentials.html
+  - /gear/travel/2024/10/12/budget-travel-essentials.html
 ---
 
 Not all great travel gear has to be expensive. After years of travel, I've found that the most useful items are often the cheapest. Here are my top budget picks - all under ₹2000 on Amazon India - that I use on every trip.

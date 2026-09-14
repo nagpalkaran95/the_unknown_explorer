@@ -1,0 +1,11 @@
+# YouTube videos shown on /watch/ page.
+# Add entries as: id (YouTube video ID from https://youtube.com/watch?v=ID), title, description.
+# Order top-to-bottom = newest-to-oldest.
+#
+# Example:
+# - id: dQw4w9WgXcQ
+#   title: "Hanoi in 24 hours - my favourite street food stops"
+#   description: "A day in Hanoi's Old Quarter - bun cha, egg coffee, and the train street."
+#   published: 2026-08-15
+
+# Add videos below (delete this comment once populated).

@@ -2,8 +2,15 @@
 layout: post
 title:  "Planning an International Trip? Don’t Miss These Essential To-Dos"
 date:   2024-10-05 00:00:00 +0530
-categories: india travel international
+slug: international-travel-checklist
+categories: [travel]
+tags: [international, planning, checklist]
 background: '/img/international-diaries/travel-checklist/banner.jpg'
+excerpt: "A pre-flight checklist covering flights, visas, insurance, cash, and the small logistics that can save your trip - built from every mistake I've made abroad."
+redirect_from:
+  - /india/travel/international/2024/10/04/checklist.html
+  - /india/travel/international/2024/10/05/checklist.html
+  - /checklist/
 ---
 
 > Planning an international trip can be an exciting yet overwhelming experience. Whether you’re a seasoned traveller or taking your first big adventure abroad, it’s essential to cover all your bases before boarding that flight. To help you avoid any last-minute surprises, I’ve put together a detailed checklist of must-dos to ensure a smooth, worry-free trip.

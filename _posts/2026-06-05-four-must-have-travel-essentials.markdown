@@ -3,8 +3,13 @@ layout: post
 title: "4 Must-Have Travel Essentials"
 subtitle: "The non-negotiable items I pack first before any adventure"
 date: 2026-06-05 00:00:00 +0530
-categories: gear travel
+categories: [gear]
+tags: [travel, packing-list, essentials]
 background: '/img/gear/essentials_banner.jpg'
+excerpt: "4 non-negotiable items I pack first before any trip - the selfie tripod, high-capacity power bank, hanging toiletry bag, and anti-theft crossbody sling."
+redirect_from:
+  - /gear/travel/2026/06/04/four-must-have-travel-essentials.html
+  - /gear/travel/2026/06/05/four-must-have-travel-essentials.html
 ---
 
 After years of traveling across different cities, countries, and terrains, my packing routine has become highly optimized. While some gear depends on the destination, there are four non-negotiable items I pack first on every single trip. 

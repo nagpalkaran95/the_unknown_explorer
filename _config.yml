@@ -49,12 +49,20 @@ remote_theme: jekyll-theme-clean-blog
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
+permalink:          /:slug/
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
   - jekyll-seo-tag
   - jekyll-responsive-image
+  - jekyll-redirect-from
+
+# Featured post shown in the "Start Here" home banner
+# Value must match a post's slug (URL segment after permalink: /:slug/)
+featured_post_slug: vietnam
+featured_post_label: "Read Vietnam Diary"
+featured_post_intro: "Start with my Vietnam trip diary - 9 days, 3 cities, one unforgettable adventure."
 
 # responsive_image:
 #   template: _includes/responsive-image.html

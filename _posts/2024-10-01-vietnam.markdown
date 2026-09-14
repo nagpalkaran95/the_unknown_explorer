@@ -2,8 +2,13 @@
 layout: post
 title:  "Exploring the Heart of Vietnam, One City at a Time!"
 date:   2024-10-02 00:00:00 +0530
-categories: vietnam travel international
+categories: [travel]
+tags: [vietnam, international, southeast-asia]
 background: '/img/international-diaries/vietnam/banner.jpg'
+excerpt: "9 days across Ho Chi Minh City, Da Nang, and Hanoi - a whirlwind tour of Vietnam packed with unforgettable food, temples, and street-level adventure."
+redirect_from:
+  - /vietnam/travel/international/2024/10/01/vietnam.html
+  - /vietnam/travel/international/2024/10/02/vietnam.html
 ---
 
 > I can hardly believe it's been a while since my incredible trip to Vietnam with three of my office buddies back in August 2019. The memories are still so vivid! We had the time of our lives exploring this beautiful country, filled with laughter, excitement, and, of course, mouth-watering food. Join me as I take you through our whirlwind adventure packed with unforgettable experiences!

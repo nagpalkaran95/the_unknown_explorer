@@ -115,7 +115,7 @@ header.masthead {
   .overlay { background: linear-gradient(to bottom, rgba(28,43,58,0.3) 0%, rgba(28,43,58,0.65) 60%, rgba(28,43,58,0.8) 100%); }
   .page-heading, .post-heading {
     h1.heading { font-family: $font-heading !important; font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 700; color: $color-white; text-shadow: 0 2px 20px rgba(0,0,0,0.4); line-height: 1.2; text-align: center !important; }
-    .subheading { font-family: $font-body !important; font-size: clamp(1rem, 2vw, 1.3rem); font-weight: 300; color: rgba(255,255,255,0.88); text-align: center !important; }
+    .subheading { font-family: $font-body !important; font-size: clamp(1.05rem, 2vw, 1.35rem); font-weight: 400; color: #FFFFFF; text-shadow: 0 2px 12px rgba(0,0,0,0.55); letter-spacing: 0.01em; text-align: center !important; margin-top: 0.5rem; }
     .meta { font-family: $font-body !important; font-size: 0.9rem; color: rgba(255,255,255,0.75); text-align: center !important; a { color: rgba(255,255,255,0.9); } }
   }
 }
@@ -159,7 +159,7 @@ header.masthead {
   color: $color-white;
   .strip-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; h3 { font-family: $font-heading !important; color: $color-white !important; font-size: 1.5rem; margin: 0; } .strip-subtitle { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin: 0.25rem 0 0; } }
   .gear-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
-  .gear-item { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 1.25rem; transition: background 0.2s ease; &:hover { background: rgba(255,255,255,0.14); } .gear-emoji { font-size: 1.75rem; margin-bottom: 0.5rem; display: block; } .gear-img { width: 50px; height: 50px; object-fit: cover; border-radius: 8px; margin-bottom: 0.75rem; display: block; border: 1px solid rgba(255, 255, 255, 0.15); } .gear-name { font-weight: 600; font-size: 0.9rem; color: $color-white; margin-bottom: 0.25rem; } .gear-desc { font-size: 0.78rem; color: rgba(255,255,255,0.6); line-height: 1.5; } }
+  .gear-item { display: block; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 1.25rem; color: $color-white !important; text-decoration: none !important; transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; &:hover { background: rgba(255,255,255,0.14); transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,0.25); .gear-cta { color: $color-gold-light; } } .gear-emoji { font-size: 1.75rem; margin-bottom: 0.5rem; display: block; } .gear-img { width: 50px; height: 50px; object-fit: cover; border-radius: 8px; margin-bottom: 0.75rem; display: block; border: 1px solid rgba(255, 255, 255, 0.15); } .gear-name { font-weight: 600; font-size: 0.9rem; color: $color-white; margin-bottom: 0.25rem; } .gear-desc { font-size: 0.78rem; color: rgba(255,255,255,0.6); line-height: 1.5; } .gear-cta { display: inline-block; margin-top: 0.6rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.03em; color: $color-gold; transition: color 0.2s ease; } }
   .btn-see-all { display: inline-flex; align-items: center; gap: 0.4rem; background: $color-gold; color: $color-navy !important; font-weight: 700; font-size: 0.875rem; padding: 0.7rem 1.75rem; border-radius: 30px; transition: all 0.25s ease; &:hover { background: $color-gold-light; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(212,168,67,0.4); } }
 }
 
@@ -201,6 +201,90 @@ footer { background: $color-navy !important; color: rgba(255,255,255,0.75); padd
 .center { display: block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
 .image-caption { text-align: center !important; font-size: 0.78rem; color: $color-text-muted; margin-top: -1rem; margin-bottom: 1.5rem; font-style: italic; }
 
+// FOOTER DISCLAIMER (Amazon Associates compliance - keep visible)
+.footer-disclaimer {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  max-width: 640px;
+  margin: 1rem auto 0 !important;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.78rem !important;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.72) !important;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  text-align: center !important;
+  i { color: $color-gold-light; margin-top: 0.15rem; flex-shrink: 0; }
+}
+
+// RELATED POSTS
+.related-posts {
+  margin: 2.5rem 0 1rem;
+  .related-title { font-family: $font-heading !important; font-size: 1.35rem; color: $color-navy; margin: 0 0 1rem; position: relative; padding-bottom: 0.5rem; text-align: left !important;
+    &::after { content: ''; position: absolute; bottom: 0; left: 0; width: 32px; height: 3px; background: $color-terracotta; border-radius: 2px; }
+  }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+  .related-card { display: flex; flex-direction: column; background: $color-white; border: 1px solid $color-border; border-radius: 12px; overflow: hidden; text-decoration: none !important; transition: transform 0.25s ease, box-shadow 0.25s ease;
+    &:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(28,43,58,0.12); .related-name { color: $color-terracotta; } }
+    .related-img { width: 100%; height: 100px; background-size: cover; background-position: center; background-color: $color-sand; }
+    .related-body { padding: 0.85rem 1rem 1rem; }
+    .related-cat { display: inline-block; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; color: $color-terracotta; margin-bottom: 0.35rem; }
+    .related-name { font-family: $font-heading !important; font-size: 0.95rem; font-weight: 700; color: $color-navy; line-height: 1.35; transition: color 0.2s ease; text-align: left !important; }
+  }
+}
+
+// STICKY GEAR CTA (mobile only, gear posts)
+.sticky-gear-cta {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+  padding: 0.85rem 1.25rem;
+  background: linear-gradient(135deg, #FF9900, darken(#FF9900, 6%));
+  color: $color-navy !important;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-align: center;
+  text-decoration: none !important;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.18);
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  i { font-size: 1.05rem; }
+  .arrow { transition: transform 0.25s ease; }
+  &:active .arrow, &:hover .arrow { transform: translateX(4px); }
+}
+
+// WATCH / VIDEOS PAGE
+.videos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; }
+.video-card {
+  background: $color-white; border: 1px solid $color-border; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.25s ease, box-shadow 0.25s ease;
+  &:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(28,43,58,0.12); .video-play { transform: translate(-50%, -50%) scale(1.1); background: #FF0000; } }
+  .video-thumb { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 9;
+    img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .video-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(0,0,0,0.75); color: $color-white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: transform 0.25s ease, background 0.25s ease; }
+  }
+  .video-body { padding: 1rem 1.25rem 1.25rem; }
+  .video-title { font-family: $font-heading !important; font-size: 1.05rem; margin: 0 0 0.4rem;
+    a { color: $color-navy; &:hover { color: $color-terracotta; } }
+  }
+  .video-desc { font-size: 0.85rem; color: $color-text-muted; line-height: 1.55; margin: 0 0 0.5rem; }
+  .video-meta { font-size: 0.75rem; color: $color-text-muted; margin: 0; i { color: $color-terracotta; margin-right: 0.3rem; } }
+}
+.videos-empty {
+  text-align: center; padding: 3rem 1.5rem; background: $color-sand; border-radius: 16px; margin: 2rem 0;
+  .videos-empty-icon { font-size: 3rem; color: #FF0000; margin-bottom: 0.75rem; }
+  h3 { font-family: $font-heading !important; color: $color-navy; margin-bottom: 0.5rem; }
+  p { color: $color-text-muted; margin-bottom: 1.5rem; text-align: center !important; }
+  .btn-youtube { display: inline-flex; align-items: center; gap: 0.5rem; background: #FF0000; color: $color-white !important; font-weight: 700; padding: 0.75rem 1.75rem; border-radius: 30px; font-size: 0.9rem; transition: transform 0.2s ease, box-shadow 0.2s ease;
+    &:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(255,0,0,0.35); }
+  }
+}
+
 // RESPONSIVE
 @media (max-width: 768px) {
   header.masthead { padding: 160px 0 100px; }
@@ -208,4 +292,9 @@ footer { background: $color-navy !important; color: rgba(255,255,255,0.75); padd
   .featured-gear-strip { padding: 1.75rem 1.25rem; .gear-items { grid-template-columns: 1fr 1fr; } }
   .amazon-product { flex-direction: column; }
   #mainNav .navbar-collapse { background: rgba(255,255,255,0.97); padding: 1rem; border-radius: 12px; margin-top: 0.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+  .related-posts .related-grid { grid-template-columns: 1fr 1fr; }
+  .sticky-gear-cta { display: flex; }
+  // Pad post content so sticky CTA doesn't cover the last elements
+  .post-content-with-sticky, main + .sticky-gear-cta { }
+  body:has(.sticky-gear-cta) { padding-bottom: 64px; }
 }

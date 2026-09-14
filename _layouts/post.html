@@ -53,7 +53,35 @@ layout: default
 
         <hr>
 
-        <div class="clearfix">
+        <!-- Related posts (same primary category, up to 3) -->
+        {% assign primary_cat = page.categories | first %}
+        {% assign related = "" | split: "" %}
+        {% for p in site.posts %}
+          {% if p.url != page.url and p.categories contains primary_cat %}
+            {% assign related = related | push: p %}
+          {% endif %}
+        {% endfor %}
+        {% assign related = related | slice: 0, 3 %}
+        {% if related.size > 0 %}
+        <section class="related-posts">
+          <h3 class="related-title">You might also like</h3>
+          <div class="related-grid">
+            {% for p in related %}
+              <a class="related-card" href="{{ p.url | prepend: site.baseurl | replace: '//', '/' }}">
+                {% if p.background %}
+                <div class="related-img" style="background-image:url('{{ p.background | prepend: site.baseurl | replace: '//', '/' }}');"></div>
+                {% endif %}
+                <div class="related-body">
+                  <span class="related-cat">{{ p.categories.first | upcase }}</span>
+                  <div class="related-name">{{ p.title }}</div>
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+        </section>
+        {% endif %}
+
+        <div class="clearfix" style="margin-top:2rem;">
           {% if page.previous.url %}
           <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline"> Post</span></a>
           {% endif %}
@@ -75,3 +103,10 @@ layout: default
       </div>
     </div>
   </div>
+
+  {% if page.categories contains 'gear' %}
+  <!-- Sticky mobile CTA for gear posts -->
+  <a class="sticky-gear-cta" href="{{ "/gear" | relative_url }}">
+    <i class="fab fa-amazon"></i> <span>See all gear picks</span> <span class="arrow">→</span>
+  </a>
+  {% endif %}

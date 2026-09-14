@@ -1,0 +1,23 @@
+# Featured gear shown in the "Gear I Actually Use" strip on the home page.
+# Each entry supports:
+#   name:  short product name (required)
+#   desc:  one-line pitch (required)
+#   image: path to thumbnail under /img/gear/ (required)
+#   href:  where clicking the card goes - Amazon affiliate URL, or an internal post URL (required)
+#
+# Order matters (top-to-bottom = left-to-right on the strip). Keep to 3-4 items for best layout.
+
+- name: "Extendable Selfie Tripod"
+  desc: "Bluetooth remote, 40-inch reach, doubles as a tripod for group shots."
+  image: /img/gear/selfie_tripod.jpg
+  href: https://amzn.to/4forlcF
+
+- name: "20,000 mAh Power Bank"
+  desc: "4-5 phone charges. Fast charging. Never run out of juice abroad."
+  image: /img/gear/powerbank_thumb.jpg
+  href: https://amzn.to/4v24lVJ
+
+- name: "Anti-Theft Crossbody Sling"
+  desc: "Water-resistant, hidden pockets. My daily-carry across every trip."
+  image: /img/gear/crossbody_bag.jpg
+  href: https://www.amazon.in/dp/B0FQ4Z9QQK/?tag=roamingletter-21

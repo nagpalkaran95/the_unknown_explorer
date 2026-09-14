@@ -33,6 +33,11 @@
           {% assign is_gear_active = true %}
         {% endif %}
 
+        {% assign is_watch_active = false %}
+        {% if current contains '/watch' %}
+          {% assign is_watch_active = true %}
+        {% endif %}
+
         <li class="nav-item">
           <a class="nav-link{% if current == '/' or current == '/index.html' %} active{% endif %}" href="{{ "/" | relative_url }}">Home</a>
         </li>
@@ -41,6 +46,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link{% if is_travel_diary %} active{% endif %}" href="{{ "/posts" | relative_url }}">Travel Diaries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if is_watch_active %} active{% endif %}" href="{{ "/watch" | relative_url }}">Watch</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-gear{% if is_gear_active %} active{% endif %}" href="{{ "/gear" | relative_url }}">🎒 Gear &amp; Picks</a>
