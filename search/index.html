@@ -1,0 +1,68 @@
+---
+layout: page
+title: Search
+subtitle: Find diaries, itineraries, food guides & gear
+permalink: /search/
+background: '/img/bg-post.jpg'
+---
+
+<div class="site-search">
+  <input type="search" id="search-input" class="search-input"
+         placeholder="Try &quot;vietnam&quot;, &quot;packing&quot;, &quot;budget gear&quot;..."
+         autocomplete="off" autofocus>
+  <p id="search-status" class="search-status"></p>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+(function () {
+  var input = document.getElementById('search-input');
+  var resultsEl = document.getElementById('search-results');
+  var statusEl = document.getElementById('search-status');
+  var index = null;
+
+  fetch('{{ "/search.json" | relative_url }}')
+    .then(function (r) { return r.json(); })
+    .then(function (data) { index = data; run(); })
+    .catch(function () { statusEl.textContent = 'Search is unavailable right now.'; });
+
+  function esc(s) {
+    var d = document.createElement('div');
+    d.textContent = s == null ? '' : String(s);
+    return d.innerHTML;
+  }
+
+  function run() {
+    if (!index) return;
+    var q = input.value.trim().toLowerCase();
+    resultsEl.innerHTML = '';
+    if (q.length < 2) { statusEl.textContent = ''; return; }
+
+    var terms = q.split(/\s+/);
+    var matches = index.filter(function (p) {
+      var hay = (p.title + ' ' + p.excerpt + ' ' +
+                 (p.categories || []).join(' ') + ' ' +
+                 (p.tags || []).join(' ')).toLowerCase();
+      return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+    });
+
+    statusEl.textContent = matches.length
+      ? matches.length + ' result' + (matches.length === 1 ? '' : 's')
+      : 'No results for "' + input.value.trim() + '"';
+
+    matches.forEach(function (p) {
+      var card = document.createElement('a');
+      card.className = 'search-result';
+      card.href = p.url;
+      card.innerHTML =
+        '<span class="sr-cat">' + esc((p.categories || ['post'])[0]).toUpperCase() + '</span>' +
+        '<span class="sr-title">' + esc(p.title) + '</span>' +
+        '<span class="sr-excerpt">' + esc(p.excerpt) + '</span>' +
+        '<span class="sr-date">' + esc(p.date) + '</span>';
+      resultsEl.appendChild(card);
+    });
+  }
+
+  input.addEventListener('input', run);
+})();
+</script>

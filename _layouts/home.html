@@ -89,6 +89,85 @@ layout: default
           {% endfor %}
         </div>
 
+        <!-- Destinations strip -->
+        {% if site.data.destinations and site.data.destinations.size > 0 %}
+        <div class="section-header" style="margin-top:2.5rem;">
+          <h2>Browse by Destination</h2>
+          <a class="view-all" href="{{ "/destinations" | relative_url }}">All destinations →</a>
+        </div>
+        <div class="dest-grid dest-grid-home">
+          {% for d in site.data.destinations limit: 3 %}
+          <a class="dest-card" href="{{ '/destinations/' | append: d.slug | append: '/' | prepend: site.baseurl | replace: '//', '/' }}">
+            <div class="dest-img" style="background-image:url('{{ d.image | prepend: site.baseurl | replace: '//', '/' }}');"></div>
+            <div class="dest-body">
+              <h3 class="dest-name">{{ d.name }}</h3>
+              <p class="dest-blurb">{{ d.blurb }}</p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Itineraries section (renders once itinerary posts exist) -->
+        {% assign home_itineraries = "" | split: "" %}
+        {% for p in site.posts %}
+          {% if p.categories contains "itinerary" %}{% assign home_itineraries = home_itineraries | push: p %}{% endif %}
+        {% endfor %}
+        {% if home_itineraries.size > 0 %}
+        <div class="section-header" style="margin-top:2.5rem;">
+          <h2>Itineraries</h2>
+          <a class="view-all" href="{{ "/itineraries" | relative_url }}">All itineraries →</a>
+        </div>
+        <div class="posts-grid">
+          {% for post in home_itineraries limit: 2 %}
+          <article class="post-card">
+            {% if post.background %}
+            <div class="card-img">
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ post.title | escape }}" loading="lazy">
+              </a>
+              <span class="card-category">ITINERARY</span>
+            </div>
+            {% endif %}
+            <div class="card-body">
+              <div class="card-title"><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></div>
+              <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Food section (renders once food posts exist) -->
+        {% assign home_food = "" | split: "" %}
+        {% for p in site.posts %}
+          {% if p.categories contains "food" %}{% assign home_food = home_food | push: p %}{% endif %}
+        {% endfor %}
+        {% if home_food.size > 0 %}
+        <div class="section-header" style="margin-top:2.5rem;">
+          <h2>Food Guides</h2>
+          <a class="view-all" href="{{ "/food" | relative_url }}">All food guides →</a>
+        </div>
+        <div class="posts-grid">
+          {% for post in home_food limit: 2 %}
+          <article class="post-card">
+            {% if post.background %}
+            <div class="card-img">
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ post.title | escape }}" loading="lazy">
+              </a>
+              <span class="card-category">FOOD</span>
+            </div>
+            {% endif %}
+            <div class="card-body">
+              <div class="card-title"><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></div>
+              <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+        {% endif %}
+
         <!-- Featured Gear Strip -->
         <div class="featured-gear-strip">
           <div class="strip-header">

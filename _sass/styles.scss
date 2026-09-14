@@ -308,6 +308,159 @@ footer { background: $color-navy !important; color: rgba(255,255,255,0.75); padd
   }
 }
 
+// QUICK PICKS (top-of-post TL;DR box)
+.quick-picks {
+  background: linear-gradient(135deg, #FFF8E7, #FFF3D4);
+  border: 1px solid $color-gold-light;
+  border-radius: 14px;
+  padding: 1.1rem 1.4rem;
+  margin: 1.5rem 0 2rem;
+  .qp-label { font-family: $font-heading !important; font-weight: 700; font-size: 1rem; color: #5A4A1A; margin-bottom: 0.5rem; }
+  ol { margin: 0; padding-left: 1.1rem; li { font-size: 0.92rem; color: #6B5A2A; margin-bottom: 0.3rem; line-height: 1.55; } }
+  a { font-weight: 600; }
+}
+
+// INLINE AFFILIATE LINKS
+a.amazon-inline {
+  color: $color-terracotta;
+  font-weight: 600;
+  border-bottom: 1px dashed rgba(192,112,90,0.5);
+  &:hover { color: darken($color-terracotta, 12%); border-bottom-style: solid; }
+}
+
+// PRODUCT CARD: clickable image + name, pick badges
+.amazon-product {
+  .product-img-link { flex-shrink: 0; display: block; border-radius: 10px; transition: transform 0.2s ease, box-shadow 0.2s ease;
+    &:hover { transform: scale(1.04); box-shadow: 0 6px 18px rgba(28,43,58,0.18); }
+  }
+  .product-name a { color: $color-navy; &:hover { color: $color-terracotta; } }
+}
+.pick-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.45rem;
+  padding: 0.14rem 0.55rem;
+  font-family: $font-body !important;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: $color-white;
+  background: $color-terracotta;
+  border-radius: 20px;
+  &.badge-value { background: $color-gold; color: $color-navy; }
+}
+
+// BREADCRUMBS
+.breadcrumbs {
+  font-size: 0.8rem;
+  color: $color-text-muted;
+  margin: 0 0 1.25rem;
+  a { color: $color-text-muted; &:hover { color: $color-terracotta; } }
+  .crumb-sep { margin: 0 0.35rem; color: $color-border; }
+  .crumb-current { color: $color-navy; font-weight: 500; }
+}
+
+// PACKED CALLOUT (diary -> gear cross-sell)
+.packed-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: $color-sand;
+  border-left: 4px solid $color-gold;
+  border-radius: 0 12px 12px 0;
+  padding: 1.1rem 1.5rem;
+  margin: 1.5rem 0 2rem;
+  .packed-icon { font-size: 1.75rem; }
+  .packed-text { flex: 1; min-width: 200px;
+    strong { font-family: $font-heading !important; color: $color-navy; display: block; margin-bottom: 0.15rem; }
+    p { font-size: 0.85rem; color: $color-text-muted; margin: 0; text-align: left !important; }
+  }
+  .btn-packed { background: $color-gold; color: $color-navy !important; font-weight: 700; font-size: 0.85rem; padding: 0.55rem 1.3rem; border-radius: 25px; white-space: normal; transition: all 0.2s ease;
+    &:hover { background: $color-gold-light; transform: translateY(-1px); }
+  }
+}
+
+// SERIES NAV
+.series-nav {
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  h4 { font-family: $font-heading !important; font-size: 1.05rem; color: $color-navy; margin: 0 0 0.6rem; text-align: left !important; }
+  ol { margin: 0; padding-left: 1.25rem; li { font-size: 0.9rem; margin-bottom: 0.3rem; } }
+  .series-current { color: $color-text-muted; font-style: italic; }
+}
+
+// DESTINATIONS
+.dest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.dest-grid-home { margin: 1.5rem 0 2.5rem; }
+.dest-card {
+  display: flex;
+  flex-direction: column;
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  &:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(28,43,58,0.14);
+    .dest-name { color: $color-terracotta; }
+    .dest-img { transform: scale(1.03); }
+  }
+  .dest-img { height: 150px; background-size: cover; background-position: center; background-color: $color-sand; transition: transform 0.4s ease; }
+  .dest-body { padding: 1.1rem 1.3rem 1.3rem; }
+  .dest-name { font-family: $font-heading !important; font-size: 1.25rem; color: $color-navy; margin: 0 0 0.35rem; transition: color 0.2s ease; text-align: left !important; }
+  .dest-blurb { font-size: 0.85rem; color: $color-text-muted; line-height: 1.55; margin: 0 0 0.5rem; text-align: left !important; }
+  .dest-count { font-size: 0.78rem; font-weight: 600; color: $color-terracotta; }
+}
+.dest-intro { font-size: 1rem; color: $color-text-muted; margin-bottom: 0.5rem; }
+.dest-footer-note { font-size: 0.85rem; color: $color-text-muted; font-style: italic; margin-top: 1rem; }
+
+// EMPTY SECTION STATES
+.empty-section {
+  text-align: center;
+  background: $color-sand;
+  border-radius: 16px;
+  padding: 2.75rem 1.5rem;
+  margin: 2rem 0;
+  .empty-icon { font-size: 2.75rem; display: block; margin-bottom: 0.75rem; }
+  h3 { font-family: $font-heading !important; color: $color-navy; margin-bottom: 0.5rem; }
+  p { color: $color-text-muted; margin: 0 auto 0.5rem; max-width: 540px; text-align: center !important; }
+}
+
+// SITE SEARCH
+.site-search { margin: 1.5rem 0 3rem; }
+.search-input {
+  width: 100%;
+  font-family: $font-body !important;
+  font-size: 1.05rem;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid $color-border;
+  border-radius: 12px;
+  background: $color-white;
+  color: $color-text;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  &:focus { outline: none; border-color: $color-terracotta; box-shadow: 0 0 0 4px rgba(192,112,90,0.12); }
+}
+.search-status { font-size: 0.85rem; color: $color-text-muted; margin: 0.75rem 0 1rem; }
+.search-results { display: flex; flex-direction: column; gap: 0.9rem; }
+.search-result {
+  display: block;
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  &:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(28,43,58,0.1); .sr-title { color: $color-terracotta; } }
+  .sr-cat { display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; color: $color-terracotta; margin-bottom: 0.2rem; }
+  .sr-title { display: block; font-family: $font-heading !important; font-size: 1.1rem; font-weight: 700; color: $color-navy; margin-bottom: 0.25rem; transition: color 0.2s ease; }
+  .sr-excerpt { display: block; font-size: 0.85rem; color: $color-text-muted; line-height: 1.55; margin-bottom: 0.3rem; }
+  .sr-date { display: block; font-size: 0.72rem; color: $color-text-muted; }
+}
+
 // RESPONSIVE
 @media (max-width: 768px) {
   header.masthead { padding: 160px 0 100px; }
@@ -318,6 +471,8 @@ footer { background: $color-navy !important; color: rgba(255,255,255,0.75); padd
   .related-posts .related-grid { grid-template-columns: 1fr 1fr; }
   .sticky-gear-cta { display: flex; }
   .diary-card { flex-direction: column; .diary-thumb { flex: none; height: 170px; } }
+  .dest-grid { grid-template-columns: 1fr; }
+  .packed-callout { flex-direction: column; align-items: flex-start; }
   // Pad post content so sticky CTA doesn't cover the last elements
   .post-content-with-sticky, main + .sticky-gear-cta { }
   body:has(.sticky-gear-cta) { padding-bottom: 64px; }

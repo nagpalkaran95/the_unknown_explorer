@@ -45,6 +45,15 @@
           <a class="nav-link{% if is_travel_diary %} active{% endif %}" href="{{ "/posts" | relative_url }}">Travel Diaries</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link{% if current contains '/destinations' %} active{% endif %}" href="{{ "/destinations" | relative_url }}">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if current contains '/itineraries' %} active{% endif %}" href="{{ "/itineraries" | relative_url }}">Itineraries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if current contains '/food' %} active{% endif %}" href="{{ "/food" | relative_url }}">Food</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link{% if current == '/about/' or current == '/about' or current == '/about.html' %} active{% endif %}" href="{{ "/about" | relative_url }}">About</a>
         </li>
         <li class="nav-item">
@@ -52,6 +61,11 @@
         </li>
         <li class="nav-item">
           <a class="nav-link nav-gear{% if is_gear_active %} active{% endif %}" href="{{ "/gear" | relative_url }}">🎒 Gear &amp; Picks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-instagram{% if current contains '/search' %} active{% endif %}" href="{{ "/search" | relative_url }}" title="Search the site">
+            <i class="fas fa-search"></i>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener" title="@{{ site.instagram_username }} on Instagram">

@@ -44,13 +44,16 @@ instagram_username: roamingletters
 youtube_username: "@roamingletters"
 
 # google_analytics
+# Legacy UA property (dead since Jul 2023) - kept for reference only
 google_analytics: UA-175438287-1
+# GA4 measurement ID - create a GA4 property at analytics.google.com and paste
+# the "G-XXXXXXXXXX" ID here. Tracking (incl. affiliate click events) activates
+# automatically once set.
+google_analytics_v4: ""
 
 # Build settings
 remote_theme: jekyll-theme-clean-blog
 markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
 permalink:          /:slug/
 plugins:
   - jekyll-feed

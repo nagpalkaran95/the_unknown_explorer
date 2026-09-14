@@ -2,7 +2,7 @@
 layout: post
 title:  "Exploring the Heart of Vietnam, One City at a Time!"
 date:   2024-10-02 00:00:00 +0530
-categories: [travel]
+categories: [diary]
 tags: [vietnam, international, southeast-asia]
 background: '/img/international-diaries/vietnam/banner.jpg'
 excerpt: "9 days across Ho Chi Minh City, Da Nang, and Hanoi - a whirlwind tour of Vietnam packed with unforgettable food, temples, and street-level adventure."

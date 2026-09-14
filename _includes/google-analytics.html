@@ -1,10 +1,28 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+{% if site.google_analytics_v4 and site.google_analytics_v4 != "" %}
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_v4 }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics_v4 }}');
 
-  gtag('config', '{{ site.google_analytics }}');
+  // Affiliate click tracking: fires an event for every outbound Amazon click
+  // (product card buttons, inline text links, featured-gear cards).
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a');
+    if (!link || !link.href) return;
+    var isAffiliate =
+      link.classList.contains('btn-amazon') ||
+      link.classList.contains('amazon-inline') ||
+      link.classList.contains('gear-item-affiliate') ||
+      /amazon\.in|amzn\.to|link\.amazon/.test(link.href);
+    if (!isAffiliate) return;
+    gtag('event', 'affiliate_click', {
+      link_url: link.href,
+      link_text: (link.textContent || '').trim().slice(0, 80),
+      page_path: location.pathname
+    });
+  }, true);
 </script>
-
+{% endif %}

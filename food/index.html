@@ -1,0 +1,52 @@
+---
+layout: page
+title: Food
+subtitle: The dishes and places worth travelling for
+permalink: /food/
+background: '/img/bg-contact.jpg'
+---
+
+{% assign food_posts = "" | split: "" %}
+{% for p in site.posts %}
+  {% if p.categories contains "food" %}
+    {% assign food_posts = food_posts | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% if food_posts.size > 0 %}
+<div class="posts-grid">
+  {% for post in food_posts %}
+  <article class="post-card">
+    {% if post.background %}
+    <div class="card-img">
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ post.title | escape }}" loading="lazy">
+      </a>
+      <span class="card-category">FOOD</span>
+    </div>
+    {% endif %}
+    <div class="card-body">
+      <div class="card-title">
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+      </div>
+      <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      <div class="card-meta">
+        <i class="far fa-calendar-alt"></i>
+        {{ post.date | date: '%b %d, %Y' }}
+        &nbsp;&middot;&nbsp;
+        <i class="far fa-clock"></i>
+        {% include read_time.html content=post.content %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty-section">
+  <span class="empty-icon">🍜</span>
+  <h3>Food guides are cooking</h3>
+  <p>Divya is mapping the best food stops from every trip - street food crawls, signature dishes, and the unmarked local joints you'd never find on your own.</p>
+  <p>Until then, follow the food trail on
+    <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener">Instagram</a>.</p>
+</div>
+{% endif %}

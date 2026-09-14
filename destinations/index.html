@@ -1,0 +1,26 @@
+---
+layout: page
+title: Destinations
+subtitle: Browse everything by place - diaries, itineraries, food & gear
+permalink: /destinations/
+background: '/img/bg-index.jpg'
+---
+
+<div class="dest-grid">
+  {% for d in site.data.destinations %}
+  <a class="dest-card" href="{{ '/destinations/' | append: d.slug | append: '/' | prepend: site.baseurl | replace: '//', '/' }}">
+    <div class="dest-img" style="background-image:url('{{ d.image | prepend: site.baseurl | replace: '//', '/' }}');"></div>
+    <div class="dest-body">
+      <h3 class="dest-name">{{ d.name }}</h3>
+      <p class="dest-blurb">{{ d.blurb }}</p>
+      {% assign count = 0 %}
+      {% for p in site.posts %}
+        {% if p.tags contains d.slug %}{% assign count = count | plus: 1 %}{% endif %}
+      {% endfor %}
+      <span class="dest-count">{{ count }} {% if count == 1 %}story{% else %}stories{% endif %} →</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<p class="dest-footer-note">More destinations landing soon - Bali, Himachal, and everywhere our next tickets take us.</p>

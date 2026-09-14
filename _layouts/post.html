@@ -31,12 +31,76 @@ layout: default
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
+        <!-- Breadcrumbs -->
+        {% assign primary_cat = page.categories | first %}
+        {% case primary_cat %}
+          {% when 'gear' %}{% assign crumb_url = '/gear' %}{% assign crumb_label = 'Gear & Picks' %}
+          {% when 'itinerary' %}{% assign crumb_url = '/itineraries' %}{% assign crumb_label = 'Itineraries' %}
+          {% when 'food' %}{% assign crumb_url = '/food' %}{% assign crumb_label = 'Food' %}
+          {% else %}{% assign crumb_url = '/posts' %}{% assign crumb_label = 'Travel Diaries' %}
+        {% endcase %}
+        <nav class="breadcrumbs" aria-label="breadcrumb">
+          <a href="{{ '/' | relative_url }}">Home</a> <span class="crumb-sep">›</span>
+          <a href="{{ crumb_url | relative_url }}">{{ crumb_label }}</a> <span class="crumb-sep">›</span>
+          <span class="crumb-current">{{ page.title | truncate: 60 }}</span>
+        </nav>
+
         <!-- Auto-inject affiliate disclaimer for gear posts -->
         {% if page.categories contains 'gear' %}
           {% include affiliate-disclaimer.html %}
         {% endif %}
 
+        <!-- Cross-sell: diaries link to the gear we packed (matched by shared destination tag) -->
+        {% unless page.categories contains 'gear' %}
+          {% assign packed_post = nil %}
+          {% for gp in site.posts %}
+            {% if gp.categories contains 'gear' %}
+              {% for t in gp.tags %}
+                {% if page.tags contains t %}
+                  {% unless packed_post %}{% assign packed_post = gp %}{% endunless %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+          {% if packed_post %}
+          <div class="packed-callout">
+            <span class="packed-icon">🎒</span>
+            <div class="packed-text">
+              <strong>What we packed for this trip</strong>
+              <p>Every item tested on the road - with Amazon links.</p>
+            </div>
+            <a class="btn-packed" href="{{ packed_post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ packed_post.title }} →</a>
+          </div>
+          {% endif %}
+        {% endunless %}
+
         {{ content }}
+
+        <!-- Series navigation -->
+        {% if page.series %}
+          {% assign series_posts = "" | split: "" %}
+          {% for sp in site.posts reversed %}
+            {% if sp.series == page.series %}
+              {% assign series_posts = series_posts | push: sp %}
+            {% endif %}
+          {% endfor %}
+          {% if series_posts.size > 1 %}
+          <div class="series-nav">
+            <h4>More in this series</h4>
+            <ol>
+              {% for sp in series_posts %}
+              <li>
+                {% if sp.url == page.url %}
+                <span class="series-current">{{ sp.title }} (you are here)</span>
+                {% else %}
+                <a href="{{ sp.url | prepend: site.baseurl | replace: '//', '/' }}">{{ sp.title }}</a>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ol>
+          </div>
+          {% endif %}
+        {% endif %}
 
         <!-- Related Gear CTA for gear posts -->
         {% if page.categories contains 'gear' %}

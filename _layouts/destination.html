@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1 class="heading">{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <span class="subheading">{{ page.subtitle }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 mx-auto">
+
+        <nav class="breadcrumbs" aria-label="breadcrumb">
+          <a href="{{ '/' | relative_url }}">Home</a> <span class="crumb-sep">›</span>
+          <a href="{{ '/destinations' | relative_url }}">Destinations</a> <span class="crumb-sep">›</span>
+          <span class="crumb-current">{{ page.title }}</span>
+        </nav>
+
+        {% assign dest_tag = page.destination_tag %}
+        {% assign dest_posts = "" | split: "" %}
+        {% for p in site.posts %}
+          {% if p.tags contains dest_tag %}
+            {% assign dest_posts = dest_posts | push: p %}
+          {% endif %}
+        {% endfor %}
+
+        {% if page.intro %}
+        <p class="dest-intro">{{ page.intro }}</p>
+        {% endif %}
+
+        {% assign type_order = "diary|itinerary|food|gear|guide" | split: "|" %}
+        {% assign type_labels = "Travel Diaries|Itineraries|Food Guides|Gear We Used|Guides & Tips" | split: "|" %}
+
+        {% for type in type_order %}
+          {% assign type_posts = "" | split: "" %}
+          {% for p in dest_posts %}
+            {% if p.categories contains type %}
+              {% assign type_posts = type_posts | push: p %}
+            {% endif %}
+          {% endfor %}
+          {% if type_posts.size > 0 %}
+          <div class="section-header" style="margin-top:2.25rem;">
+            <h2>{{ type_labels[forloop.index0] }}</h2>
+          </div>
+          <div class="posts-grid">
+            {% for post in type_posts %}
+            <article class="post-card{% if type == 'gear' %} gear-card{% endif %}">
+              {% if post.background %}
+              <div class="card-img">
+                <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                  <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ post.title | escape }}" loading="lazy">
+                </a>
+                <span class="card-category">{{ type | upcase }}</span>
+              </div>
+              {% endif %}
+              <div class="card-body">
+                <div class="card-title">
+                  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+                </div>
+                <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+                <div class="card-meta">
+                  <i class="far fa-calendar-alt"></i>
+                  {{ post.date | date: '%b %d, %Y' }}
+                  &nbsp;&middot;&nbsp;
+                  <i class="far fa-clock"></i>
+                  {% include read_time.html content=post.content %}
+                </div>
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+          {% endif %}
+        {% endfor %}
+
+        {% if dest_posts.size == 0 %}
+        <div class="empty-section">
+          <p>Stories from {{ page.title }} are coming soon. Follow
+            <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener">@RoamingLetters</a>
+            for updates from the road.</p>
+        </div>
+        {% endif %}
+
+        {{ content }}
+
+      </div>
+    </div>
+  </div>

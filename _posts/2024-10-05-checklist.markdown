@@ -3,7 +3,7 @@ layout: post
 title:  "Planning an International Trip? Don’t Miss These Essential To-Dos"
 date:   2024-10-05 00:00:00 +0530
 slug: international-travel-checklist
-categories: [travel]
+categories: [guide]
 tags: [international, planning, checklist]
 background: '/img/international-diaries/travel-checklist/banner.jpg'
 excerpt: "A pre-flight checklist covering flights, visas, insurance, cash, and the small logistics that can save your trip - built from every mistake I've made abroad."

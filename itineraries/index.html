@@ -1,0 +1,52 @@
+---
+layout: page
+title: Itineraries
+subtitle: Day-by-day plans built the way we'd plan our own trips
+permalink: /itineraries/
+background: '/img/bg-post.jpg'
+---
+
+{% assign itinerary_posts = "" | split: "" %}
+{% for p in site.posts %}
+  {% if p.categories contains "itinerary" %}
+    {% assign itinerary_posts = itinerary_posts | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% if itinerary_posts.size > 0 %}
+<div class="posts-grid">
+  {% for post in itinerary_posts %}
+  <article class="post-card">
+    {% if post.background %}
+    <div class="card-img">
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ post.title | escape }}" loading="lazy">
+      </a>
+      <span class="card-category">ITINERARY</span>
+    </div>
+    {% endif %}
+    <div class="card-body">
+      <div class="card-title">
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+      </div>
+      <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      <div class="card-meta">
+        <i class="far fa-calendar-alt"></i>
+        {{ post.date | date: '%b %d, %Y' }}
+        &nbsp;&middot;&nbsp;
+        <i class="far fa-clock"></i>
+        {% include read_time.html content=post.content %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty-section">
+  <span class="empty-icon">🗺️</span>
+  <h3>Itineraries are on the way</h3>
+  <p>We're writing up our trips as practical day-by-day plans - routes, stays, food stops, and booking links. First up: Vietnam and Udaipur.</p>
+  <p>Meanwhile, read the <a href="{{ '/posts' | relative_url }}">travel diaries</a> or check our
+    <a href="{{ '/international-travel-checklist/' | relative_url }}">international trip checklist</a>.</p>
+</div>
+{% endif %}

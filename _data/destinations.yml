@@ -1,0 +1,19 @@
+# Destinations shown on /destinations/ and used for per-destination hub pages.
+# Each entry:
+#   name:  display name
+#   slug:  must match both the tag used on posts AND the folder under /destinations/
+#   image: banner/thumbnail path
+#   blurb: one-liner for the hub card
+#
+# To add a destination: add an entry here, tag posts with the slug, and create
+# destinations/<slug>/index.html with `layout: destination` (copy an existing one).
+
+- name: Vietnam
+  slug: vietnam
+  image: /img/international-diaries/vietnam/banner.jpg
+  blurb: "9 days, 3 cities - street food, karst bays, and the gear that survived it all."
+
+- name: Udaipur
+  slug: udaipur
+  image: /img/indian-diaries/udaipur/banner.jpg
+  blurb: "The city of lakes - palaces, ghats, and a spontaneous escape that started it all."
