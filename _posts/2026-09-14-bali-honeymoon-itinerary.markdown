@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Our 12-Night Bali Honeymoon Itinerary"
-subtitle: "Ubud, Munduk, Nusa Lembongan and Uluwatu - the exact March route we followed, day by day"
+subtitle: "Ubud, Munduk, Nusa Lembongan and Uluwatu - the exact route we followed, day by day"
 date: 2026-09-14 00:00:00 +0530
 categories: [itinerary]
 tags: [bali, international, southeast-asia, honeymoon, travel]
@@ -33,7 +33,7 @@ Three nights of jungle views, high-energy activities and shopping.
 
 - 1:30 PM: Landed at DPS airport, cleared immigration.
 - 3:00 PM: Airport pickup, pre-booked on Klook (it was cheaper than Grab). Transfer to Ubud takes about 1.5 hours.
-- Evening: Checked in, got a massage at Putu's Whole Health Spa, and had dinner at Hujan Locale. A quiet local warung works just as well on arrival night.
+- Evening: Check in and book a spa session at your villa or somewhere nearby - after the flight and the drive, you will want it. For dinner, we walked to a warung close to the villa. Some of the best local food we had all trip.
 
 ### Day 2 (Mar 7): Art, shopping and the big night out
 
@@ -41,7 +41,7 @@ Three nights of jungle views, high-energy activities and shopping.
 - 1:00 PM: Shopping at Ubud Art Market - woven bags, macrame, wood carvings, textiles. Bargain, and take your time.
 - 4:00 PM: Back to the villa for a nap. You will need it.
 - 6:00 PM: Transfer to Canggu (1.5 hours).
-- The party: dinner at Mexicola, drinks at Old Man's, late night at Sandbar.
+- The party: dinner at The Beach Love, then drinks and a lot of fun at Mexicola, Old Man's after that, and late night at Sandbar.
 - 2:00 AM: Driver takes you back to Ubud. You sleep in the car. Worth it.
 
 ### Day 3 (Mar 8): Recovery and jungle mud
