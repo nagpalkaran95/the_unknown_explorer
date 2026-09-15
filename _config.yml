@@ -22,8 +22,8 @@ title: RoamingLetters
 email: nagpalkaran95@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Travel stories, gear picks & honest recommendations
-baseurl: "/roamingletters" # updated after GitHub repo rename
-url: "https://nagpalkaran95.github.io"
+baseurl: "" # site now serves from the custom domain root
+url: "https://roamingletters.com"
 author: RoamingLetters
 # Partner name shown on /about/
 partner_name: "Divya Gaba"
