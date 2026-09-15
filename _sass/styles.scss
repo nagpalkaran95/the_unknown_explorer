@@ -477,6 +477,9 @@ a.amazon-inline {
 
 // Collapsed navbar dropdown (hamburger shows below the xl breakpoint)
 @media (max-width: 1199.98px) {
+  // Bootstrap strips container gutters below the expand breakpoint,
+  // leaving brand + MENU flush with the screen edge - restore breathing room
+  #mainNav { padding: 0.75rem 1rem; }
   #mainNav .navbar-collapse {
     background: rgba(255,255,255,0.97);
     padding: 0.75rem 1rem;
