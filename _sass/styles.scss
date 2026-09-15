@@ -476,13 +476,28 @@ a.amazon-inline {
 
 // Collapsed navbar dropdown (hamburger shows below the xl breakpoint)
 @media (max-width: 1199.98px) {
-  #mainNav .navbar-collapse { background: rgba(255,255,255,0.97); padding: 1rem; border-radius: 12px; margin-top: 0.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+  #mainNav .navbar-collapse {
+    background: rgba(255,255,255,0.97);
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+  }
+  // Bigger tap targets in the open menu
+  #mainNav .nav-link { padding: 0.7rem 0.75rem !important; font-size: 0.9rem; }
+  #mainNav .nav-link.nav-instagram { display: inline-block; }
   #mainNav .nav-link.nav-gear { margin-left: 0; display: inline-block; margin-top: 0.35rem; }
 }
 
 // RESPONSIVE
 @media (max-width: 768px) {
-  header.masthead { padding: 160px 0 100px; }
+  header.masthead { padding: 110px 0 64px; }
+  // The theme adds huge inner padding to heading blocks on small screens - flatten it
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading { padding: 0; }
   .posts-grid { grid-template-columns: 1fr; gap: 1.25rem; }
   .featured-gear-strip { padding: 1.75rem 1.25rem; .gear-items { grid-template-columns: 1fr 1fr; } }
   .amazon-product { flex-direction: column; }
